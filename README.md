@@ -7,13 +7,13 @@
 Venera：**漫画源 → 右上角「+」→ 填下面的仓库地址 → 进入列表后逐个点 Add**
 
 ```
-https://cdn.jsdelivr.net/gh/<你的用户名>/<仓库名>@main/index.json
+https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/index.json
 ```
 
 或直接用 raw 地址：
 
 ```
-https://raw.githubusercontent.com/<你的用户名>/<仓库名>/main/index.json
+https://raw.githubusercontent.com/diandianmi77/cimoc-sources/main/index.json
 ```
 
 单个源也可以走「Use a config file」直接选本仓库里的 `<key>.js`。
