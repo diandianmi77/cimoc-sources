@@ -4,19 +4,14 @@
 
 ## 导入
 
-Venera：**漫画源 → 右上角「+」→ 填下面的仓库地址 → 进入列表后逐个点 Add**
+Venera：**漫画源 → 右上角「+」→ 填仓库地址 → 逐个点 Add**
 
 ```
 https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/index.json
 ```
 
-或直接用 raw 地址：
-
-```
-https://raw.githubusercontent.com/diandianmi77/cimoc-sources/main/index.json
-```
-
-单个源也可以走「Use a config file」直接选本仓库里的 `<key>.js`。
+> ⚠️ 2026-10 实测：Cimoc 这批源大多建于 2020 年前后，**45 个域名已失效/停放/改版**，只有 `tencent`、`dm5` 两个仍能跑通搜索与章节。
+> 失效清单见 `unavailable.json`（含原因），代码仍全部保留在仓库里，方便日后按站重写。
 
 ## 结构
 

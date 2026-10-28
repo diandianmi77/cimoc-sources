@@ -12,7 +12,7 @@ class DM5 extends ComicSource {
   url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/dm5.js"
 
   get baseUrl() {
-    return "http://www.dm5.com"
+    return "https://www.dm5.com"
   }
 
   get headers() {
@@ -50,11 +50,11 @@ class DM5 extends ComicSource {
   search = {
     load: async (keyword, options, page) => {
       const res = await Network.post(
-        "http://m.dm5.com/pagerdata.ashx",
+        "https://m.dm5.com/pagerdata.ashx",
         {
           ...this.headers,
           "Content-Type": "application/x-www-form-urlencoded;charset=utf-8",
-          "Referer": "http://m.dm5.com",
+          "Referer": "https://m.dm5.com",
         },
         `t=7&pageindex=${page}&title=${encodeURIComponent(keyword)}`
       )
@@ -144,7 +144,7 @@ class DM5 extends ComicSource {
 
       const chapters = {}
       const list = []
-      for (const a of doc.querySelectorAll("#chapterlistload > ul  li > a")) {
+      for (const a of doc.querySelectorAll("#detail-list-select-1 a, .detail-list-select a")) {
         const href = a.attributes["href"] || ""
         list.push([href, (a.text || "").split(" ")[0]])
       }
@@ -165,11 +165,11 @@ class DM5 extends ComicSource {
     },
 
     loadEp: async (comicId, epId) => {
-      const url = `http://m.dm5.com/${epId}`
+      const url = epId.startsWith("http") ? epId : "https://m.dm5.com/" + epId.replace(/^\/+/, "")
       const res = await Network.get(url, { ...this.headers, "Referer": url })
       if (res.status !== 200) throw `Invalid status code: ${res.status}`
 
-      const m = res.body.match(/eval\([\s\S]*\)/)
+      const m = res.body.match(/eval\([^\n]*\)/)
       if (!m) throw "未找到图片数据"
       let code = m[0]
       // 在同作用域内取 newImgs（与 Cimoc 的 evalDecrypt 等价）

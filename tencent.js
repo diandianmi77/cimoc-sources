@@ -33,8 +33,9 @@ class Tencent extends ComicSource {
 
   // 执行 nonce 脚本得到指令串
   evalNonce(code) {
+    const cleaned = String(code).trim().replace(/;\s*$/, "")
     try {
-      return String(new Function("return (" + code + ")")())
+      return String(new Function("return (" + cleaned + ")")())
     } catch (e) {
       try {
         return String(new Function(code + "\n;return typeof result !== 'undefined' ? result : '';")())
@@ -100,13 +101,12 @@ class Tencent extends ComicSource {
 
       const chapters = {}
       const list = []
-      for (const li of doc.querySelectorAll("ul.normal > li.chapter-item")) {
-        const a = li.querySelector("a")
-        if (!a) continue
+      for (const a of doc.querySelectorAll("ul.chapter-list > li.chapter-item > a")) {
         const href = a.attributes["href"] || ""
         const idx = href.indexOf(`/chapter/index/id/${id}/cid/`)
         const path = idx >= 0 ? href.substring(idx + `/chapter/index/id/${id}/cid/`.length) : href
-        list.push([path, a.text])
+        const n = (a.text || "").replace(/[^0-9]/g, "")
+        list.push([path, n ? `第${n}话` : a.text])
       }
       list.reverse()
       for (const [k, v] of list) chapters[k] = v
