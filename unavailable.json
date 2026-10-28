@@ -21,13 +21,13 @@
     "name": "动漫狂",
     "fileName": "cartoonmad.js",
     "key": "cartoonmad",
-    "reason": "HTTP 200，页面已改版/非原站"
+    "reason": "空壳页/已停运"
   },
   {
     "name": "CC漫画",
     "fileName": "ccmh.js",
     "key": "ccmh",
-    "reason": "HTTP 200，页面已改版/非原站"
+    "reason": "域名已停放待售"
   },
   {
     "name": "CC图库",
@@ -57,7 +57,7 @@
     "name": "动漫之家",
     "fileName": "dmzj.js",
     "key": "dmzj",
-    "reason": "HTTP 200，页面已改版/非原站"
+    "reason": "已跳转到空壳页"
   },
   {
     "name": "动漫之家v2Fix",
@@ -165,19 +165,19 @@
     "name": "漫画堆",
     "fileName": "mh50.js",
     "key": "mh50",
-    "reason": "域名已停放待售"
+    "reason": "域名已停放待售（跳 hugedomains）"
   },
   {
     "name": "我要去漫画",
     "fileName": "mh517.js",
     "key": "mh517",
-    "reason": "HTTP 200，页面已改版/非原站"
+    "reason": "空壳页/跳转脚本"
   },
   {
     "name": "57漫画",
     "fileName": "mh57.js",
     "key": "mh57",
-    "reason": "HTTP 200，页面已改版/非原站"
+    "reason": "域名已停放待售"
   },
   {
     "name": "漫画Love",
@@ -207,7 +207,7 @@
     "name": "Pic177",
     "fileName": "pic177.js",
     "key": "pic177",
-    "reason": "HTTP 200，页面已改版/非原站"
+    "reason": "空壳页/跳转脚本"
   },
   {
     "name": "扑飞漫画",
@@ -219,7 +219,7 @@
     "name": "奇漫屋",
     "fileName": "qimanwu.js",
     "key": "qimanwu",
-    "reason": "HTTP 200，页面已改版/非原站"
+    "reason": "空壳页"
   },
   {
     "name": "奇妙漫画",
@@ -243,19 +243,19 @@
     "name": "有妖气",
     "fileName": "u17.js",
     "key": "u17",
-    "reason": "跳转到其它站点"
+    "reason": "已并入 bilibili 漫画"
   },
   {
     "name": "Webtoon",
     "fileName": "webtoon.js",
     "key": "webtoon",
-    "reason": "HTTP 200，页面已改版/非原站"
+    "reason": "真实站点，但搜索接口被地区限制"
   },
   {
     "name": "咚漫漫画",
     "fileName": "webtoon_dongman.js",
     "key": "webtoon_dongman",
-    "reason": "HTTP 200，页面已改版/非原站"
+    "reason": "真实站点，搜索为前端渲染，需按新接口重写"
   },
   {
     "name": "优酷漫画",
