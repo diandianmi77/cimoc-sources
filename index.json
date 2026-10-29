@@ -26,5 +26,12 @@
     "key": "rumanhua",
     "version": "1.0.0",
     "description": "如漫画（rumanhua2.com），支持搜索、详情与章节图片"
+  },
+  {
+    "name": "包子漫画",
+    "fileName": "baozimh.js",
+    "key": "baozimh",
+    "version": "1.0.0",
+    "description": "包子漫画（cn.webmota.com），搜索、详情与章节图片均可用"
   }
 ]

@@ -24,12 +24,6 @@
     "reason": "有妖气漫画已于 2022 年底停止运营，作品迁移至哔哩哔哩漫画"
   },
   {
-    "name": "包子漫画",
-    "fileName": "baozimh.js",
-    "key": "baozimh",
-    "reason": "站点可正常访问，章节图片地址由站点脚本在浏览器端解密，暂时无法在源内还原"
-  },
-  {
     "name": "Vomic",
     "fileName": "vomicmh.js",
     "key": "vomicmh",

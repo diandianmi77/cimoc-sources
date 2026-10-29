@@ -22,6 +22,7 @@ https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/index.json
 | 大树漫画 | `dashu` | dashumanhua.com | 搜索 15 条 / 章节 1178 话 / 图片 104 张 |
 | 漫客栈 | `mkzhan` | mkzhan.com | 搜索 10 条 / 章节 138 话 / 图片 11 张 |
 | 如漫画 | `rumanhua` | rumanhua2.com | 搜索 2 条 / 章节 969 话 / 图片正常解析 |
+| 包子漫画 | `baozimh` | cn.webmota.com | 搜索 10 条 / 章节 1187 话 / 图片 20 张 |
 
 上述「实测结果」为验证时单次请求的返回数量，仅用于说明流程可用，不代表站点上限。
 
@@ -29,6 +30,7 @@ https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/index.json
 
 - `dashu`：图片地址写在页面内的打包脚本中，源内完成解包
 - `rumanhua`：图片地址经过页面内打包与编码处理，源内完成解包与解码
+- `baozimh`：站点网页版的图片地址需在浏览器端解密，源改用 App 版阅读页，直接取得图片地址
 
 ## 分支与目录
 
