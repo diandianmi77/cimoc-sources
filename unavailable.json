@@ -1,5 +1,11 @@
 [
   {
+    "name": "大树漫画",
+    "fileName": "dashu.js",
+    "key": "dashu",
+    "reason": "站点章节图床 res.xiaoqinre.com 的解析记录已被注销（公共 DNS 返回 NXDOMAIN），搜索、详情与章节列表仍正常，但全站章节图片无法加载，待站点更换图床后恢复收录"
+  },
+  {
     "name": "动漫屋",
     "fileName": "dm5.js",
     "key": "dm5",

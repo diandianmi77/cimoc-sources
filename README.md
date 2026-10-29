@@ -18,17 +18,17 @@ https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/index.json
 
 | 名称 | key | 站点 | 实测结果 |
 |---|---|---|---|
-| 腾讯动漫 | `tencent` | ac.qq.com | 搜索 9 条 / 章节 13 话 / 图片 19 张 |
-| 大树漫画 | `dashu` | dashumanhua.com | 搜索 15 条 / 章节 1178 话 / 图片 104 张 |
+| 腾讯动漫 | `tencent` | ac.qq.com | 搜索 10 条 / 章节 13 话 / 图片 19 张 |
 | 漫客栈 | `mkzhan` | mkzhan.com | 搜索 10 条 / 章节 138 话 / 图片 11 张 |
-| 如漫画 | `rumanhua` | rumanhua2.com | 搜索 2 条 / 章节 969 话 / 图片正常解析 |
+| 如漫画 | `rumanhua` | rumanhua2.com | 搜索 7 条 / 章节 1201 话 / 图片 17 张 |
 | 包子漫画 | `baozimh` | cn.webmota.com | 搜索 10 条 / 章节 1187 话 / 图片 20 张 |
+
+实测除解析出图片地址外，还抽样验证了图片 URL 本身可正常下载。
 
 上述「实测结果」为验证时单次请求的返回数量，仅用于说明流程可用，不代表站点上限。
 
 部分站点对章节图片做了处理，本仓库的源已内置对应的还原逻辑：
 
-- `dashu`：图片地址写在页面内的打包脚本中，源内完成解包
 - `rumanhua`：图片地址经过页面内打包与编码处理，源内完成解包与解码
 - `baozimh`：站点网页版的图片地址需在浏览器端解密，源改用 App 版阅读页，直接取得图片地址
 

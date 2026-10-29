@@ -7,13 +7,6 @@
     "description": "腾讯动漫（ac.qq.com），支持搜索、详情与章节图片"
   },
   {
-    "name": "大树漫画",
-    "fileName": "dashu.js",
-    "key": "dashu",
-    "version": "1.0.0",
-    "description": "大树漫画（dashumanhua.com），支持搜索、详情与章节图片"
-  },
-  {
     "name": "漫客栈",
     "fileName": "mkzhan.js",
     "key": "mkzhan",
