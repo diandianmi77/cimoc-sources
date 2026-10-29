@@ -19,5 +19,12 @@
     "key": "mkzhan",
     "version": "1.0.0",
     "description": "漫客栈（mkzhan.com）搜索/详情/章节，图片走 comic.mkzcdn.com 接口"
+  },
+  {
+    "name": "如漫画",
+    "fileName": "rumanhua.js",
+    "key": "rumanhua",
+    "version": "1.0.0",
+    "description": "如漫画（rumanhua2.com）搜索/详情/章节，图片为页面打包脚本+base64/XOR 加密，源内已还原"
   }
 ]

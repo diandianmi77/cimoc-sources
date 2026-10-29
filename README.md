@@ -17,6 +17,7 @@ https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/index.json
 | 腾讯动漫 | `tencent` | ac.qq.com | 搜索 9 / 章 13 / 图 19 |
 | 大树漫画 | `dashu` | dashumanhua.com | 搜索 15 / 章 1178 / 图 104 |
 | 漫客栈 | `mkzhan` | mkzhan.com | 搜索 10 / 章 138 / 图 11 |
+| 如漫画 | `rumanhua` | rumanhua2.com | 搜索 2 / 章 969 / 图 2~9（图片页面内加密，已还原） |
 
 ## 你点名的 10 个站
 
@@ -27,7 +28,7 @@ https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/index.json
 | 动漫屋 | ⚠️ 改版 | 站点 2026-09 改版：详情页不再输出章节列表，改由 JS 异步取，旧选择器失效，需重新逆向 |
 | 百年漫画 | ⚠️ 空壳 | `bnmanhua.com` 已停；现 `bmanhua.com` 只是导航页，阅读页跳转到漫客栈等原站，自己不出图 |
 | 包子漫画G站 | ⚠️ 图片加密 | `baozimh.org` 可访问，搜索/详情/章节走 `v2.apikk.top` 接口，但图片列表由 21KB 混淆脚本解密，暂无法在源内还原 |
-| 如漫画 | ⚠️ 图片加密 | `rumanhua2.com`（http）可访问，搜索/详情/章节正常，章节图为页面内自定义 base64+XOR 加密 |
+| 如漫画 | ✅ 可用 | 新增 `rumanhua.js`：页面打包脚本 + base64 → XOR → base64 解码，10 组密钥按页面 id 轮换 |
 | Vomic | ⚠️ WAF | `vomicmh.com` 详情页可开，但搜索路径被 WAF 拦（HTTP 567），无法完成搜索流程 |
 | 酷漫屋 | ❌ 已变质 | `kumanwu.cc` 现在是短视频站（`/video/`，带成人广告），不再是漫画站 |
 | 拷贝漫画 | ❌ 网络不通 | 现域名 `www.mangacopy.com` 在本机被重置/超时，需代理才能验证 |

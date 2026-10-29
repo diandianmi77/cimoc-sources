@@ -282,12 +282,6 @@
     "reason": "站可访问(baozimh.org)，章节图片经 v2.apikk.top 下发后由 21KB 混淆脚本解密，暂无法在源内还原"
   },
   {
-    "name": "如漫画",
-    "fileName": "rumanhua.js",
-    "key": "rumanhua",
-    "reason": "站可访问(rumanhua2.com，http)，搜索/详情/章节列表正常，但章节图片是页面内自定义编码+XOR 加密，暂无法还原"
-  },
-  {
     "name": "Vomic",
     "fileName": "vomicmh.js",
     "key": "vomicmh",
