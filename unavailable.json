@@ -9,7 +9,7 @@
     "name": "百年漫画",
     "fileName": "bai_nian.js",
     "key": "bai_nian",
-    "reason": "域名无响应/超时"
+    "reason": "原域名 bnmanhua.com 已停用；现站 bmanhua.com 只是导航壳，阅读页跳转到漫客栈等原站，自身没有图片"
   },
   {
     "name": "布卡漫画",
@@ -51,7 +51,7 @@
     "name": "拷贝漫画",
     "fileName": "copymh.js",
     "key": "copymh",
-    "reason": "域名无响应/超时"
+    "reason": "现域名 www.mangacopy.com 在本机网络被重置/超时，需代理才能访问，无法验证"
   },
   {
     "name": "动漫之家",
@@ -243,7 +243,7 @@
     "name": "有妖气",
     "fileName": "u17.js",
     "key": "u17",
-    "reason": "已并入 bilibili 漫画"
+    "reason": "有妖气漫画 2022 年底已停运，u17.com 无响应，作品并入哔哩哔哩漫画"
   },
   {
     "name": "Webtoon",
@@ -268,5 +268,35 @@
     "fileName": "yyls.js",
     "key": "yyls",
     "reason": "域名无响应/超时"
+  },
+  {
+    "name": "动漫屋",
+    "fileName": "dm5.js",
+    "key": "dm5",
+    "reason": "站点改版(2026-09)：详情页不再服务端渲染章节列表，改为 JS 异步加载，旧解析失效，待重新逆向"
+  },
+  {
+    "name": "包子漫画G站",
+    "fileName": "baozimh.js",
+    "key": "baozimh",
+    "reason": "站可访问(baozimh.org)，章节图片经 v2.apikk.top 下发后由 21KB 混淆脚本解密，暂无法在源内还原"
+  },
+  {
+    "name": "如漫画",
+    "fileName": "rumanhua.js",
+    "key": "rumanhua",
+    "reason": "站可访问(rumanhua2.com，http)，搜索/详情/章节列表正常，但章节图片是页面内自定义编码+XOR 加密，暂无法还原"
+  },
+  {
+    "name": "Vomic",
+    "fileName": "vomicmh.js",
+    "key": "vomicmh",
+    "reason": "搜索路径被 WAF 拦截(HTTP 567)，仅详情页可访问，无法完成搜索流程"
+  },
+  {
+    "name": "酷漫屋",
+    "fileName": "kumanwu.js",
+    "key": "kumanwu",
+    "reason": "kumanwu.cc 已改为短视频站（/video/、广告站），不再是漫画站"
   }
 ]

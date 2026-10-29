@@ -1,81 +1,52 @@
 # cimoc-sources → VeneraNext
 
-把 [Cimoc](https://github.com/Haleydu/Cimoc)（release-tci 分支）的 **47 个 Java 漫画源**逐行翻译成 VeneraNext 可用的 JS 源。
+把 [Cimoc](https://github.com/Haleydu/Cimoc) 的 Java 漫画源翻译成 VeneraNext 可用的 JS 源，并按当前线上站点补写了几个新源。
 
 ## 导入
 
-Venera：**漫画源 → 右上角「+」→ 填仓库地址 → 逐个点 Add**
+Venera：**漫画源 → 右上角「+」→ 填仓库地址 → 逐个 Add**
 
 ```
 https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/index.json
 ```
 
-> ⚠️ 2026-10 实测：Cimoc 这批源大多建于 2020 年前后，**45 个域名已失效/停放/改版**，只有 `tencent`、`dm5` 两个仍能跑通搜索与章节。
-> 失效清单见 `unavailable.json`（含原因），代码仍全部保留在仓库里，方便日后按站重写。
+## 当前可用（已实测搜索→详情→章节图）
+
+| 源 | key | 站点 | 实测 |
+|---|---|---|---|
+| 腾讯动漫 | `tencent` | ac.qq.com | 搜索 9 / 章 13 / 图 19 |
+| 大树漫画 | `dashu` | dashumanhua.com | 搜索 15 / 章 1178 / 图 104 |
+| 漫客栈 | `mkzhan` | mkzhan.com | 搜索 10 / 章 138 / 图 11 |
+
+## 你点名的 10 个站
+
+| 站点 | 状态 | 说明 |
+|---|---|---|
+| 大树漫画 | ✅ 可用 | 新增 `dashu.js`，图片为页面内 `eval(p,a,c,k,e,d)` 打包，源里已内置解包 |
+| 漫客栈 | ✅ 可用 | 新增 `mkzhan.js`，图片走 `comic.mkzcdn.com/chapter/content/` 接口 |
+| 动漫屋 | ⚠️ 改版 | 站点 2026-09 改版：详情页不再输出章节列表，改由 JS 异步取，旧选择器失效，需重新逆向 |
+| 百年漫画 | ⚠️ 空壳 | `bnmanhua.com` 已停；现 `bmanhua.com` 只是导航页，阅读页跳转到漫客栈等原站，自己不出图 |
+| 包子漫画G站 | ⚠️ 图片加密 | `baozimh.org` 可访问，搜索/详情/章节走 `v2.apikk.top` 接口，但图片列表由 21KB 混淆脚本解密，暂无法在源内还原 |
+| 如漫画 | ⚠️ 图片加密 | `rumanhua2.com`（http）可访问，搜索/详情/章节正常，章节图为页面内自定义 base64+XOR 加密 |
+| Vomic | ⚠️ WAF | `vomicmh.com` 详情页可开，但搜索路径被 WAF 拦（HTTP 567），无法完成搜索流程 |
+| 酷漫屋 | ❌ 已变质 | `kumanwu.cc` 现在是短视频站（`/video/`，带成人广告），不再是漫画站 |
+| 拷贝漫画 | ❌ 网络不通 | 现域名 `www.mangacopy.com` 在本机被重置/超时，需代理才能验证 |
+| 有妖气 | ❌ 已停运 | 2022 年底停运，`u17.com` 无响应，作品并入哔哩哔哩漫画 |
+
+其余 45 个 Cimoc 旧源大多建于 2020 年前后，域名失效/停放/空壳，原因见 `unavailable.json`。
 
 ## 结构
 
 ```
-index.json     源清单（Venera 读取入口）
-*.js           47 个源，与 index 中 fileName 一一对应
+index.json        源清单（Venera 读取入口，只放可用源）
+unavailable.json  不可用清单（含原因）
+*.js              各源实现
 ```
 
 `index.json` 每项：`name` / `fileName` / `key` / `version`，可选 `description`。
 
-## 源清单
-
-| 源 | key | 备注 |
-|---|---|---|
-| 2animx | `animx2` | 懒加载分页逐页取图 |
-| 百年漫画 | `bai_nian` | 表单 POST 搜索 |
-| 布卡漫画 | `buka` | JSON 搜索接口 |
-| 动漫狂 | `cartoonmad` | 原站 BIG5 搜索改为 UTF-8 |
-| CC漫画 | `ccmh` | 按 `?p=n` 逐页取图 |
-| CC图库 | `cctuku` | 仅保留主题分类 |
-| 吹雪漫画 | `chuixue` | GB2312 搜索编码 |
-| 吹妖漫画 | `chuiyao` | 仅保留题材分类 |
-| 拷贝漫画 | `copymh` | 章节图 AES-CBC 解密 |
-| 动漫屋 | `dm5` | eval 混淆取 newImgs |
-| 动漫之家 | `dmzj` | v3api |
-| 动漫之家v2Fix | `dmzj_fix` | api.dmzj.com + chapinfo |
-| 动漫之家v2 | `dmzj_v2` | 页面内嵌 JSON |
-| EHentai | `ehentai` | 40 张一页，图片页二次请求 |
-| ExHentai | `exhentai` | 原实现被注释，按 EHentai 还原 + Cookie 设置 |
-| 古风漫画 | `gufeng` | — |
-| 汗汗酷漫 | `hhaazz` | 复刻 unsuan 解码 |
-| 汗汗漫画 | `hhssee` | 原实现被注释，已还原 |
-| 997700 | `hhxxee` | 16 台图片分服 |
-| 热辣漫画 | `hotmanga` | JSON API |
-| 漫画柜 | `ikanman` | packer + LZ64 解压 |
-| 禁漫天堂 | `jmtt` | 多备用域名 |
-| 漫画DB | `manhuadb` | base64 图片清单 |
-| MangaBZ | `mangabz` | 逐页 chapterimage.ashx |
-| MangaNel | `manganel` | 章节 id 为完整 URL |
-| Mangakakalot | `mangakakalot` | 兼容 manganelo 选择器 |
-| 漫画台 | `manhuatai` | rule + 序号模板拼图 |
-| 漫画160 | `mh160` | base64 + 分服前缀 |
-| 漫画堆 | `mh50` | AES-CBC + 多 CDN |
-| 我要去漫画 | `mh517` | base64 代理地址 |
-| 57漫画 | `mh57` | eval + `fs` 数组 |
-| 漫画Love | `mhlove` | base64 + `$qingtiandy$` |
-| 咪咕漫画 | `migu` | UTF-8→%XX→Base64 关键字 |
-| NHentai | `nhentai` | 原实现被注释，已还原 |
-| oh漫画 | `ohmanhua` | AES-ECB 多密钥试解 |
-| Pic177 | `pic177` | 原实现被注释，已还原 |
-| 扑飞漫画 | `pufei` | GB2312 + base64 JS 求值 |
-| 奇漫屋 | `qimanwu` | 静态+动态章节 |
-| 奇妙漫画 | `qimiaomh` | AjaxLoadImgUrl |
-| 6漫画 | `sixmh` | eval 取 newImgs |
-| 腾讯动漫 | `tencent` | nonce 位点剪除还原 |
-| 土豪漫画 | `tuhao` | `|72cms|` 切分 |
-| 有妖气 | `u17` | get_chapter_v5 接口 |
-| Webtoon | `webtoon` | imageList JSON |
-| 咚漫漫画 | `webtoon_dongman` | 含 motiontoon 兜底 |
-| 优酷漫画 | `ykmh` | chapterImages JSON |
-| YYLS | `yyls` | 按「共 N 頁」拼序号 |
-
 ## 说明
 
-- 只做了语法与结构校验（`class extends ComicSource`、`name/key/version` 一致、`search.load` / `comic.loadInfo` / `comic.loadEp` 齐全），**未在真机逐站实测**；站点改版后按报错微调选择器即可。
-- 所有源的 `favorites` 未实现——Cimoc 的收藏是本地数据库，没有远端接口。
-- `Locality`（本地）、`Null`（占位）、`Wnacg`（实现整段注释）三个源未转换。
+- 三个可用源都在本机用 curl+cheerio 跑通「搜索 → 详情 → 章节图」三步后才放进 `index.json`。
+- 失效/待修的源文件仍留在仓库里，方便日后按站重写。
+- 所有源都未实现 `favorites`（Cimoc 收藏是本地数据库，没有远端接口）。
