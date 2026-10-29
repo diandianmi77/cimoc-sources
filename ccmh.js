@@ -8,7 +8,7 @@ class CCMH extends ComicSource {
   key = "ccmh"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/ccmh.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/ccmh.js"
 
   get baseUrl() {
     return "http://m.ccmh6.com"

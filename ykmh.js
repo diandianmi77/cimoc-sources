@@ -8,7 +8,7 @@ class YKMH extends ComicSource {
   key = "ykmh"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/ykmh.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/ykmh.js"
 
   get baseUrl() {
     return "https://m.ykmh.com"

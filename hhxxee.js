@@ -8,7 +8,7 @@ class HHxxee extends ComicSource {
   key = "hhxxee"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/hhxxee.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/hhxxee.js"
 
   get baseUrl() {
     return "http://99770.hhxxee.com"

@@ -8,7 +8,7 @@ class Webtoon extends ComicSource {
   key = "webtoon"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/webtoon.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/webtoon.js"
 
   get baseUrl() {
     return "https://m.webtoons.com"

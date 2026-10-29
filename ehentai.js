@@ -9,7 +9,7 @@ class EHentai extends ComicSource {
   key = "ehentai"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/ehentai.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/ehentai.js"
 
   get baseUrl() {
     return "https://e-hentai.org"

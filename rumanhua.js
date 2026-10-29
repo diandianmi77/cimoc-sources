@@ -1,11 +1,12 @@
 /** @type {import('./_venera_.js')} */
 /**
- * 如漫画 —— http://rumanhua2.com（只有 http）
- * 搜索：POST /s  (k=关键字)
- * 详情：GET /{comicId}/ ，章节再 POST /morechapter (id=comicId) 补齐
+ * 如漫画 —— http://rumanhua2.com（站点仅提供 http）
+ * 搜索：POST /s，参数 k=关键字
+ * 详情：GET /{comicId}/，其余章节通过 POST /morechapter（id=comicId）补齐
  * 章节：GET /{comicId}/{chapterId}.html
- *   图片清单写在页面里的 eval(p,a,c,k,e) 打包脚本中（var __c0rst96="..."），
- *   解码方式：base64 → 与 "cdcsdwq" 循环异或 → 再 base64 → JSON 数组。
+ *   页面内的图片清单写在 eval(p,a,c,k,e,d) 打包脚本中（变量 __c0rst96），
+ *   解码流程为 base64 → 按密钥循环异或 → 再 base64 → JSON 数组；
+ *   密钥共 10 组，由页面元素 id 决定，源内按 id 选取并留有余量逐组尝试。
  */
 class Rumanhua extends ComicSource {
   name = "如漫画"

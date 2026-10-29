@@ -9,7 +9,7 @@ class Manhuatai extends ComicSource {
   key = "manhuatai"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/manhuatai.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/manhuatai.js"
 
   get baseUrl() {
     return "https://m.manhuatai.com"

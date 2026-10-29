@@ -8,7 +8,7 @@ class MH517 extends ComicSource {
   key = "mh517"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/mh517.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/mh517.js"
 
   get baseUrl() {
     return "http://m.517manhua.com"

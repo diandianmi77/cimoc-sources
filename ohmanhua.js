@@ -9,7 +9,7 @@ class Ohmanhua extends ComicSource {
   key = "ohmanhua"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/ohmanhua.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/ohmanhua.js"
 
   get baseUrl() {
     return "https://www.cocomanhua.com"

@@ -9,7 +9,7 @@ class YYLS extends ComicSource {
   key = "yyls"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/yyls.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/yyls.js"
 
   get baseUrl() {
     return "http://8comic.se"

@@ -9,7 +9,7 @@ class HotManga extends ComicSource {
   key = "hotmanga"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/hotmanga.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/hotmanga.js"
 
   get apiBase() {
     return "https://mapi.hotmangasg.com:12001"

@@ -9,7 +9,7 @@ class PuFei extends ComicSource {
   key = "pufei"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/pufei.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/pufei.js"
 
   get baseUrl() {
     return "http://m.pufei8.com"

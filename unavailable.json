@@ -1,296 +1,296 @@
 [
   {
-    "name": "2animx",
-    "fileName": "animx2.js",
-    "key": "animx2",
-    "reason": "被 Cloudflare/反爬拦截"
+    "name": "动漫屋",
+    "fileName": "dm5.js",
+    "key": "dm5",
+    "reason": "站点改版：详情页不再由服务端输出章节列表，改为前端异步加载，现有解析逻辑失效，待适配新接口"
   },
   {
     "name": "百年漫画",
     "fileName": "bai_nian.js",
     "key": "bai_nian",
-    "reason": "原域名 bnmanhua.com 已停用；现站 bmanhua.com 只是导航壳，阅读页跳转到漫客栈等原站，自身没有图片"
-  },
-  {
-    "name": "布卡漫画",
-    "fileName": "buka.js",
-    "key": "buka",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "动漫狂",
-    "fileName": "cartoonmad.js",
-    "key": "cartoonmad",
-    "reason": "空壳页/已停运"
-  },
-  {
-    "name": "CC漫画",
-    "fileName": "ccmh.js",
-    "key": "ccmh",
-    "reason": "域名已停放待售"
-  },
-  {
-    "name": "CC图库",
-    "fileName": "cctuku.js",
-    "key": "cctuku",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "吹雪漫画",
-    "fileName": "chuixue.js",
-    "key": "chuixue",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "吹妖漫画",
-    "fileName": "chuiyao.js",
-    "key": "chuiyao",
-    "reason": "域名无响应/超时"
+    "reason": "原域名 bnmanhua.com 已停用；现用域名 bmanhua.com 仅为导航页，阅读跳转至其他站点，自身不提供图片"
   },
   {
     "name": "拷贝漫画",
     "fileName": "copymh.js",
     "key": "copymh",
-    "reason": "现域名 www.mangacopy.com 在本机网络被重置/超时，需代理才能访问，无法验证"
-  },
-  {
-    "name": "动漫之家",
-    "fileName": "dmzj.js",
-    "key": "dmzj",
-    "reason": "已跳转到空壳页"
-  },
-  {
-    "name": "动漫之家v2Fix",
-    "fileName": "dmzj_fix.js",
-    "key": "dmzj_fix",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "动漫之家v2",
-    "fileName": "dmzj_v2.js",
-    "key": "dmzj_v2",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "EHentai",
-    "fileName": "ehentai.js",
-    "key": "ehentai",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "ExHentai",
-    "fileName": "exhentai.js",
-    "key": "exhentai",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "古风漫画",
-    "fileName": "gufeng.js",
-    "key": "gufeng",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "汗汗酷漫",
-    "fileName": "hhaazz.js",
-    "key": "hhaazz",
-    "reason": "地址 404"
-  },
-  {
-    "name": "汗汗漫画",
-    "fileName": "hhssee.js",
-    "key": "hhssee",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "997700",
-    "fileName": "hhxxee.js",
-    "key": "hhxxee",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "热辣漫画",
-    "fileName": "hotmanga.js",
-    "key": "hotmanga",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "漫画柜",
-    "fileName": "ikanman.js",
-    "key": "ikanman",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "禁漫天堂",
-    "fileName": "jmtt.js",
-    "key": "jmtt",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "MangaBZ",
-    "fileName": "mangabz.js",
-    "key": "mangabz",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "Mangakakalot",
-    "fileName": "mangakakalot.js",
-    "key": "mangakakalot",
-    "reason": "被 Cloudflare/反爬拦截"
-  },
-  {
-    "name": "MangaNel",
-    "fileName": "manganel.js",
-    "key": "manganel",
-    "reason": "被 Cloudflare/反爬拦截"
-  },
-  {
-    "name": "漫画DB",
-    "fileName": "manhuadb.js",
-    "key": "manhuadb",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "漫画台",
-    "fileName": "manhuatai.js",
-    "key": "manhuatai",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "漫画160",
-    "fileName": "mh160.js",
-    "key": "mh160",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "漫画堆",
-    "fileName": "mh50.js",
-    "key": "mh50",
-    "reason": "域名已停放待售（跳 hugedomains）"
-  },
-  {
-    "name": "我要去漫画",
-    "fileName": "mh517.js",
-    "key": "mh517",
-    "reason": "空壳页/跳转脚本"
-  },
-  {
-    "name": "57漫画",
-    "fileName": "mh57.js",
-    "key": "mh57",
-    "reason": "域名已停放待售"
-  },
-  {
-    "name": "漫画Love",
-    "fileName": "mhlove.js",
-    "key": "mhlove",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "咪咕漫画",
-    "fileName": "migu.js",
-    "key": "migu",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "NHentai",
-    "fileName": "nhentai.js",
-    "key": "nhentai",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "oh漫画",
-    "fileName": "ohmanhua.js",
-    "key": "ohmanhua",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "Pic177",
-    "fileName": "pic177.js",
-    "key": "pic177",
-    "reason": "空壳页/跳转脚本"
-  },
-  {
-    "name": "扑飞漫画",
-    "fileName": "pufei.js",
-    "key": "pufei",
-    "reason": "被 Cloudflare/反爬拦截"
-  },
-  {
-    "name": "奇漫屋",
-    "fileName": "qimanwu.js",
-    "key": "qimanwu",
-    "reason": "空壳页"
-  },
-  {
-    "name": "奇妙漫画",
-    "fileName": "qimiaomh.js",
-    "key": "qimiaomh",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "6漫画",
-    "fileName": "sixmh.js",
-    "key": "sixmh",
-    "reason": "地址 404"
-  },
-  {
-    "name": "土豪漫画",
-    "fileName": "tuhao.js",
-    "key": "tuhao",
-    "reason": "域名无响应/超时"
+    "reason": "现域名 www.mangacopy.com 需境外网络环境访问，当前环境连接被重置，暂无法验证"
   },
   {
     "name": "有妖气",
     "fileName": "u17.js",
     "key": "u17",
-    "reason": "有妖气漫画 2022 年底已停运，u17.com 无响应，作品并入哔哩哔哩漫画"
+    "reason": "有妖气漫画已于 2022 年底停止运营，作品迁移至哔哩哔哩漫画"
   },
   {
-    "name": "Webtoon",
-    "fileName": "webtoon.js",
-    "key": "webtoon",
-    "reason": "真实站点，但搜索接口被地区限制"
-  },
-  {
-    "name": "咚漫漫画",
-    "fileName": "webtoon_dongman.js",
-    "key": "webtoon_dongman",
-    "reason": "真实站点，搜索为前端渲染，需按新接口重写"
-  },
-  {
-    "name": "优酷漫画",
-    "fileName": "ykmh.js",
-    "key": "ykmh",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "YYLS",
-    "fileName": "yyls.js",
-    "key": "yyls",
-    "reason": "域名无响应/超时"
-  },
-  {
-    "name": "动漫屋",
-    "fileName": "dm5.js",
-    "key": "dm5",
-    "reason": "站点改版(2026-09)：详情页不再服务端渲染章节列表，改为 JS 异步加载，旧解析失效，待重新逆向"
-  },
-  {
-    "name": "包子漫画G站",
+    "name": "包子漫画",
     "fileName": "baozimh.js",
     "key": "baozimh",
-    "reason": "站可访问(baozimh.org)，章节图片经 v2.apikk.top 下发后由 21KB 混淆脚本解密，暂无法在源内还原"
+    "reason": "站点可正常访问，章节图片地址由站点脚本在浏览器端解密，暂时无法在源内还原"
   },
   {
     "name": "Vomic",
     "fileName": "vomicmh.js",
     "key": "vomicmh",
-    "reason": "搜索路径被 WAF 拦截(HTTP 567)，仅详情页可访问，无法完成搜索流程"
+    "reason": "搜索接口被站点防火墙拦截，详情页可用，搜索流程无法完成"
   },
   {
     "name": "酷漫屋",
     "fileName": "kumanwu.js",
     "key": "kumanwu",
-    "reason": "kumanwu.cc 已改为短视频站（/video/、广告站），不再是漫画站"
+    "reason": "现域名 kumanwu.cc 已转型为短视频站点，不再提供漫画内容"
+  },
+  {
+    "name": "2animx",
+    "fileName": "animx2.js",
+    "key": "animx2",
+    "reason": "站点经 Cloudflare 校验拦截，脚本请求无法通过"
+  },
+  {
+    "name": "布卡漫画",
+    "fileName": "buka.js",
+    "key": "buka",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "动漫狂",
+    "fileName": "cartoonmad.js",
+    "key": "cartoonmad",
+    "reason": "站点已停止运营，仅剩空壳页面"
+  },
+  {
+    "name": "CC漫画",
+    "fileName": "ccmh.js",
+    "key": "ccmh",
+    "reason": "域名已停放（停放页）"
+  },
+  {
+    "name": "CC图库",
+    "fileName": "cctuku.js",
+    "key": "cctuku",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "吹雪漫画",
+    "fileName": "chuixue.js",
+    "key": "chuixue",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "吹妖漫画",
+    "fileName": "chuiyao.js",
+    "key": "chuiyao",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "动漫之家",
+    "fileName": "dmzj.js",
+    "key": "dmzj",
+    "reason": "访问已跳转至空壳页面"
+  },
+  {
+    "name": "动漫之家（v2Fix）",
+    "fileName": "dmzj_fix.js",
+    "key": "dmzj_fix",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "动漫之家（v2）",
+    "fileName": "dmzj_v2.js",
+    "key": "dmzj_v2",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "EHentai",
+    "fileName": "ehentai.js",
+    "key": "ehentai",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "ExHentai",
+    "fileName": "exhentai.js",
+    "key": "exhentai",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "古风漫画",
+    "fileName": "gufeng.js",
+    "key": "gufeng",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "汗汗酷漫",
+    "fileName": "hhaazz.js",
+    "key": "hhaazz",
+    "reason": "接口返回 404"
+  },
+  {
+    "name": "汗汗漫画",
+    "fileName": "hhssee.js",
+    "key": "hhssee",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "997700",
+    "fileName": "hhxxee.js",
+    "key": "hhxxee",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "热辣漫画",
+    "fileName": "hotmanga.js",
+    "key": "hotmanga",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "漫画柜",
+    "fileName": "ikanman.js",
+    "key": "ikanman",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "禁漫天堂",
+    "fileName": "jmtt.js",
+    "key": "jmtt",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "MangaBZ",
+    "fileName": "mangabz.js",
+    "key": "mangabz",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "Mangakakalot",
+    "fileName": "mangakakalot.js",
+    "key": "mangakakalot",
+    "reason": "站点启用 Cloudflare 校验，脚本请求被拦截"
+  },
+  {
+    "name": "MangaNel",
+    "fileName": "manganel.js",
+    "key": "manganel",
+    "reason": "站点启用 Cloudflare 校验，脚本请求被拦截"
+  },
+  {
+    "name": "漫画DB",
+    "fileName": "manhuadb.js",
+    "key": "manhuadb",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "漫画台",
+    "fileName": "manhuatai.js",
+    "key": "manhuatai",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "漫画160",
+    "fileName": "mh160.js",
+    "key": "mh160",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "漫画堆",
+    "fileName": "mh50.js",
+    "key": "mh50",
+    "reason": "域名已停放（跳转至域名交易页）"
+  },
+  {
+    "name": "我要去漫画",
+    "fileName": "mh517.js",
+    "key": "mh517",
+    "reason": "仅剩跳转脚本，无实际内容"
+  },
+  {
+    "name": "57漫画",
+    "fileName": "mh57.js",
+    "key": "mh57",
+    "reason": "域名已停放（停放页）"
+  },
+  {
+    "name": "漫画Love",
+    "fileName": "mhlove.js",
+    "key": "mhlove",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "咪咕漫画",
+    "fileName": "migu.js",
+    "key": "migu",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "NHentai",
+    "fileName": "nhentai.js",
+    "key": "nhentai",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "oh漫画",
+    "fileName": "ohmanhua.js",
+    "key": "ohmanhua",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "Pic177",
+    "fileName": "pic177.js",
+    "key": "pic177",
+    "reason": "仅剩跳转脚本，无实际内容"
+  },
+  {
+    "name": "扑飞漫画",
+    "fileName": "pufei.js",
+    "key": "pufei",
+    "reason": "站点启用 Cloudflare 校验，脚本请求被拦截"
+  },
+  {
+    "name": "奇漫屋",
+    "fileName": "qimanwu.js",
+    "key": "qimanwu",
+    "reason": "仅剩空壳页面"
+  },
+  {
+    "name": "奇妙漫画",
+    "fileName": "qimiaomh.js",
+    "key": "qimiaomh",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "6漫画",
+    "fileName": "sixmh.js",
+    "key": "sixmh",
+    "reason": "接口返回 404"
+  },
+  {
+    "name": "土豪漫画",
+    "fileName": "tuhao.js",
+    "key": "tuhao",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "Webtoon",
+    "fileName": "webtoon.js",
+    "key": "webtoon",
+    "reason": "站点正常，但搜索接口存在地区限制"
+  },
+  {
+    "name": "咚漫漫画",
+    "fileName": "webtoon_dongman.js",
+    "key": "webtoon_dongman",
+    "reason": "站点正常，但搜索改为前端渲染，需按新接口重写"
+  },
+  {
+    "name": "优酷漫画",
+    "fileName": "ykmh.js",
+    "key": "ykmh",
+    "reason": "原域名已无响应"
+  },
+  {
+    "name": "YYLS",
+    "fileName": "yyls.js",
+    "key": "yyls",
+    "reason": "原域名已无响应"
   }
 ]

@@ -8,7 +8,7 @@ class Chuiyao extends ComicSource {
   key = "chuiyao"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/chuiyao.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/chuiyao.js"
 
   get baseUrl() {
     return "http://m.chuiyao.com"

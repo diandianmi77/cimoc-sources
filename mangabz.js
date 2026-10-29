@@ -9,7 +9,7 @@ class MangaBZ extends ComicSource {
   key = "mangabz"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/mangabz.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/mangabz.js"
 
   get baseUrl() {
     return "http://www.mangabz.com"

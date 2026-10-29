@@ -9,7 +9,7 @@ class MiGu extends ComicSource {
   key = "migu"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/migu.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/migu.js"
 
   get baseUrl() {
     return "http://www.migudm.cn"

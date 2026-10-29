@@ -9,7 +9,7 @@ class ManHuaDB extends ComicSource {
   key = "manhuadb"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/manhuadb.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/manhuadb.js"
 
   get baseUrl() {
     return "https://www.manhuadb.com"

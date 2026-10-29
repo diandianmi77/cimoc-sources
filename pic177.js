@@ -10,7 +10,7 @@ class Pic177 extends ComicSource {
   key = "pic177"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/pic177.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/pic177.js"
 
   get baseUrl() {
     return "http://www.177pic66.com"

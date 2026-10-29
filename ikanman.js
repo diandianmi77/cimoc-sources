@@ -9,7 +9,7 @@ class IKanman extends ComicSource {
   key = "ikanman"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/ikanman.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/ikanman.js"
 
   get baseUrl() {
     return "https://tw.manhuagui.com"

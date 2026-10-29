@@ -9,7 +9,7 @@ class CopyMH extends ComicSource {
   key = "copymh"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/copymh.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/copymh.js"
 
   get baseUrl() {
     return "https://copymanga.com"

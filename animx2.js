@@ -9,7 +9,7 @@ class Animx2 extends ComicSource {
   key = "animx2"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/animx2.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/animx2.js"
 
   get baseUrl() {
     return "http://www.2animx.com"

@@ -8,7 +8,7 @@ class CCTuku extends ComicSource {
   key = "cctuku"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/cctuku.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/cctuku.js"
 
   get baseUrl() {
     return "http://m.tuku.cc"

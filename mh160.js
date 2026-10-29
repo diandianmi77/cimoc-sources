@@ -8,7 +8,7 @@ class MH160 extends ComicSource {
   key = "mh160"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/mh160.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/mh160.js"
 
   get baseUrl() {
     return "https://www.mh160.xyz"

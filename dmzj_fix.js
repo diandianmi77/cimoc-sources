@@ -8,7 +8,7 @@ class DmzjFix extends ComicSource {
   key = "dmzj_fix"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/dmzj_fix.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/dmzj_fix.js"
 
   get baseUrl() {
     return "https://m.dmzj.com"

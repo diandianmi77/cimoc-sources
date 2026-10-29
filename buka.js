@@ -8,7 +8,7 @@ class BuKa extends ComicSource {
   key = "buka"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/buka.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/buka.js"
 
   get baseUrl() {
     return "http://m.buka.cn"

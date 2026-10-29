@@ -4,27 +4,27 @@
     "fileName": "tencent.js",
     "key": "tencent",
     "version": "1.0.0",
-    "description": "腾讯动漫（ac.qq.com）按作品搜索、章节、图片"
+    "description": "腾讯动漫（ac.qq.com），支持搜索、详情与章节图片"
   },
   {
     "name": "大树漫画",
     "fileName": "dashu.js",
     "key": "dashu",
     "version": "1.0.0",
-    "description": "大树漫画（dashumanhua.com）搜索/详情/章节，图片为页面内打包脚本，源已内置解包"
+    "description": "大树漫画（dashumanhua.com），支持搜索、详情与章节图片"
   },
   {
     "name": "漫客栈",
     "fileName": "mkzhan.js",
     "key": "mkzhan",
     "version": "1.0.0",
-    "description": "漫客栈（mkzhan.com）搜索/详情/章节，图片走 comic.mkzcdn.com 接口"
+    "description": "漫客栈（mkzhan.com），支持搜索、详情与章节图片"
   },
   {
     "name": "如漫画",
     "fileName": "rumanhua.js",
     "key": "rumanhua",
     "version": "1.0.0",
-    "description": "如漫画（rumanhua2.com）搜索/详情/章节，图片为页面打包脚本+base64/XOR 加密，源内已还原"
+    "description": "如漫画（rumanhua2.com），支持搜索、详情与章节图片"
   }
 ]

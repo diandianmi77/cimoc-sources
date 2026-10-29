@@ -1,53 +1,62 @@
-# cimoc-sources → VeneraNext
+# cimoc-sources
 
-把 [Cimoc](https://github.com/Haleydu/Cimoc) 的 Java 漫画源翻译成 VeneraNext 可用的 JS 源，并按当前线上站点补写了几个新源。
+面向 [VeneraNext](https://github.com/venera-app/venera) 的漫画源仓库。
 
-## 导入
+本仓库最早收录了 [Cimoc](https://github.com/Haleydu/Cimoc) 的 Java 漫画源到 JavaScript 的转换结果，随后按各站点当前的接口与页面结构补写了新的源，并在本地对每个源实际跑通了「搜索 → 详情 → 章节图片」流程后才收录进索引。
 
-Venera：**漫画源 → 右上角「+」→ 填仓库地址 → 逐个 Add**
+## 导入方式
+
+在 Venera 中进入 **漫画源 → 右上角「+」→ 填入下方地址 → 逐个添加**：
 
 ```
 https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/index.json
 ```
 
-## 当前可用（已实测搜索→详情→章节图）
+> 若新增源后客户端仍只显示旧列表，属于 CDN 缓存现象，重新进入漫画源列表或稍后重试即可。
 
-| 源 | key | 站点 | 实测 |
+## 当前可用源
+
+| 名称 | key | 站点 | 实测结果 |
 |---|---|---|---|
-| 腾讯动漫 | `tencent` | ac.qq.com | 搜索 9 / 章 13 / 图 19 |
-| 大树漫画 | `dashu` | dashumanhua.com | 搜索 15 / 章 1178 / 图 104 |
-| 漫客栈 | `mkzhan` | mkzhan.com | 搜索 10 / 章 138 / 图 11 |
-| 如漫画 | `rumanhua` | rumanhua2.com | 搜索 2 / 章 969 / 图 2~9（图片页面内加密，已还原） |
+| 腾讯动漫 | `tencent` | ac.qq.com | 搜索 9 条 / 章节 13 话 / 图片 19 张 |
+| 大树漫画 | `dashu` | dashumanhua.com | 搜索 15 条 / 章节 1178 话 / 图片 104 张 |
+| 漫客栈 | `mkzhan` | mkzhan.com | 搜索 10 条 / 章节 138 话 / 图片 11 张 |
+| 如漫画 | `rumanhua` | rumanhua2.com | 搜索 2 条 / 章节 969 话 / 图片正常解析 |
 
-## 你点名的 10 个站
+上述「实测结果」为验证时单次请求的返回数量，仅用于说明流程可用，不代表站点上限。
 
-| 站点 | 状态 | 说明 |
-|---|---|---|
-| 大树漫画 | ✅ 可用 | 新增 `dashu.js`，图片为页面内 `eval(p,a,c,k,e,d)` 打包，源里已内置解包 |
-| 漫客栈 | ✅ 可用 | 新增 `mkzhan.js`，图片走 `comic.mkzcdn.com/chapter/content/` 接口 |
-| 动漫屋 | ⚠️ 改版 | 站点 2026-09 改版：详情页不再输出章节列表，改由 JS 异步取，旧选择器失效，需重新逆向 |
-| 百年漫画 | ⚠️ 空壳 | `bnmanhua.com` 已停；现 `bmanhua.com` 只是导航页，阅读页跳转到漫客栈等原站，自己不出图 |
-| 包子漫画G站 | ⚠️ 图片加密 | `baozimh.org` 可访问，搜索/详情/章节走 `v2.apikk.top` 接口，但图片列表由 21KB 混淆脚本解密，暂无法在源内还原 |
-| 如漫画 | ✅ 可用 | 新增 `rumanhua.js`：页面打包脚本 + base64 → XOR → base64 解码，10 组密钥按页面 id 轮换 |
-| Vomic | ⚠️ WAF | `vomicmh.com` 详情页可开，但搜索路径被 WAF 拦（HTTP 567），无法完成搜索流程 |
-| 酷漫屋 | ❌ 已变质 | `kumanwu.cc` 现在是短视频站（`/video/`，带成人广告），不再是漫画站 |
-| 拷贝漫画 | ❌ 网络不通 | 现域名 `www.mangacopy.com` 在本机被重置/超时，需代理才能验证 |
-| 有妖气 | ❌ 已停运 | 2022 年底停运，`u17.com` 无响应，作品并入哔哩哔哩漫画 |
+部分站点对章节图片做了处理，本仓库的源已内置对应的还原逻辑：
 
-其余 45 个 Cimoc 旧源大多建于 2020 年前后，域名失效/停放/空壳，原因见 `unavailable.json`。
+- `dashu`：图片地址写在页面内的打包脚本中，源内完成解包
+- `rumanhua`：图片地址经过页面内打包与编码处理，源内完成解包与解码
 
-## 结构
+## 分支与目录
 
 ```
-index.json        源清单（Venera 读取入口，只放可用源）
-unavailable.json  不可用清单（含原因）
+index.json        源索引，客户端读取入口，仅收录当前可用源
+unavailable.json  暂不可用源清单，含具体原因
 *.js              各源实现
 ```
 
-`index.json` 每项：`name` / `fileName` / `key` / `version`，可选 `description`。
+`index.json` 每项包含 `name`、`fileName`、`key`、`version`，可选 `description`。
 
-## 说明
+## 维护说明
 
-- 三个可用源都在本机用 curl+cheerio 跑通「搜索 → 详情 → 章节图」三步后才放进 `index.json`。
-- 失效/待修的源文件仍留在仓库里，方便日后按站重写。
-- 所有源都未实现 `favorites`（Cimoc 收藏是本地数据库，没有远端接口）。
+- `index.json` 只收录在本地验证过完整流程的源，避免客户端出现加载失败或空白内容
+- 暂不可用的源不做删除，仍保留在仓库中，原因记录于 `unavailable.json`，便于后续按站点重写
+- 站点改版较为频繁，若某源失效，欢迎提交 Issue 说明现象与时间
+- 所有源均未实现 `favorites`，Cimoc 的收藏保存在本地数据库，没有可对接的远端接口
+
+## 常见问题
+
+**为什么索引里的源这么少？**
+
+Cimoc 的这批源大多写于 2020 年前后，站点在此期间经历了域名变更、停运、改版等变化。未通过验证的源若直接收录，客户端会表现为加载失败或内容为空，因此统一移入 `unavailable.json` 并注明原因，其中也包括需要重新适配接口的站点。
+
+**可以直接收录 `unavailable.json` 里的源吗？**
+
+不建议。这些源文件未删除，改写完成后通过验证即可移回 `index.json`。
+
+## 声明
+
+本仓库仅提供客户端侧的解析代码，不存储、不代理、不分发任何漫画内容。所有内容均来自第三方站点，请支持正版并遵守各站点的使用条款。

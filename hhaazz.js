@@ -10,7 +10,7 @@ class HHAAZZ extends ComicSource {
   key = "hhaazz"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/hhaazz.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/hhaazz.js"
 
   settings = {
     baseUrl: { title: "站点域名", type: "input", default: "http://hhaass.com" },

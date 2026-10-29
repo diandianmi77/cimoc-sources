@@ -9,7 +9,7 @@ class U17 extends ComicSource {
   key = "u17"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/u17.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/u17.js"
 
   get baseUrl() {
     return "http://www.u17.com"

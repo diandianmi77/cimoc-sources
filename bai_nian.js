@@ -8,7 +8,7 @@ class BaiNian extends ComicSource {
   key = "bai_nian"
   version = "1.0.0"
   minAppVersion = "1.4.0"
-  url = "https://cdn.jsdelivr.net/gh/venera-app/cimoc-sources@main/bai_nian.js"
+  url = "https://cdn.jsdelivr.net/gh/diandianmi77/cimoc-sources@main/bai_nian.js"
 
   get baseUrl() {
     return "https://m.bnmanhua.com"
